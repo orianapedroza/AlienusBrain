@@ -4,6 +4,6 @@ Requerimientos: Instalacion de Systemc, en el siguiente link apareceran los paso
 
 Diseño del Mpr: 
 
-# [alt text] (https://github.com/orianapedroza/AlienusBrain/blob/master/IMG-20200116-WA0064.jpg)
+![alt text] (https://raw.github.com/orianapedroza/AlienusBrain/blob/master/IMG-20200116-WA0064.jpg)
 
 
