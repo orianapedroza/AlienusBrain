@@ -9,11 +9,13 @@ class Pipe1 : sc_module
         sc_in <int> opcode_in;
         sc_in <int> op1_in;
         sc_in <int> op2_in;
+        sc_in <int> op3_in;
         sc_out <int> opcode_out;
         sc_out <int> op1_out;
         sc_out <int> op2_out;
-        int opcode_saved = 0, op1_saved = 0, op2_saved = 0;
-        int aux1 = 0, aux2 = 0, aux3 = 0;
+        sc_out <int> op3_out;
+        // int opcode_saved = 0, op1_saved = 0, op2_saved = 0,op3_saved = 0;
+        // int aux1 = 0, aux2 = 0, aux3 = 0;
 
         SC_CTOR(Pipe1)
         {
@@ -41,6 +43,7 @@ class Pipe1 : sc_module
         opcode_out.write(opcode_in.read());
         op1_out.write(op1_in.read());
         op2_out.write(op2_in.read());
+        op3_out.write(op3_in.read());
 
     }
 

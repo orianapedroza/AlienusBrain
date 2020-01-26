@@ -17,6 +17,9 @@ class Fetch : sc_module
         // 2st Operand
         sc_out <int> op2;
 
+        //3st Operand 
+        sc_out <int> op3;
+
         // Clock Signal
         sc_in  <bool> clock;
 
@@ -36,7 +39,7 @@ class Fetch : sc_module
             SC_METHOD(operation)
                 sensitive<<clock.pos();
 
-        
+            // Open HARD_DISK jajaja
             reg_inst.open("DISCO_DURO.txt",ios::in);
             // Move to end of file
             reg_inst.seekg(0,reg_inst.end);
@@ -62,15 +65,16 @@ class Fetch : sc_module
                     // Move to pos(PC)
                     reg_inst.seekg(pos);
                     
-                    string line,opcode1,opcode2,opcode3;
+                    string line,opcode1,opcode2,opcode3,opcode4;
                     
                     // Read instruction
                     getline(reg_inst,line);
 
                     // Separate instruction and operands
                     opcode1=line.substr(0,4);
-                    opcode2=line.substr(4,6);
-                    opcode3=line.substr(10,6);
+                    opcode2=line.substr(4,4);
+                    opcode3=line.substr(8,4);
+                    opcode4=line.substr(12,4);
 
                     // Increment PC for new clock ahead
                     PC++;
@@ -81,7 +85,8 @@ class Fetch : sc_module
                     op1.write(stoi(opcode2,0,2));
                     // cout << stoi(opcode2,0,2) << " ";
                     op2.write(stoi(opcode3,0,2));    
-                    // cout << stoi(opcode3,0,2) << " \n";      
+                    // cout << stoi(opcode3,0,2) << " \n";
+                    op3.write(stoi(opcode4,0,2));      
                 }
                 // If Calculated position is > file size stall cpu (needs to be stopped somewhere else)
                 else
@@ -94,6 +99,7 @@ class Fetch : sc_module
                         // cout << "0";
                         op2.write(0); 
                         // cout << "0\n";
+                        op3.write(0);
                         repetitions++;               
                     }
                     else{
