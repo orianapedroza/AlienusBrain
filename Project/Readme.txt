@@ -11,5 +11,3 @@ Nota: Si compila con versiones desactualizadas de g++ o clang es recomendable re
       estricto con las conversiones de tipo.
 
 LARGA VIDA A SYSTEMC!!
-
-MERLYN no llores, sabes que te quiero. 
