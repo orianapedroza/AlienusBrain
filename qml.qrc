@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>content/images/emoji.png</file>
+        <file>content/data/data.txt</file>
+        <file>content/images/smile.png</file>
+        <file>content/images/pipe2.png</file>
+        <file>content/images/fetch1.png</file>
+        <file>content/images/pipe4.png</file>
+        <file>content/images/pipe1.png</file>
+        <file>content/images/icon-left-arrow.png</file>
+        <file>BarraTitulo.qml</file>
+        <file>BarraIzq.qml</file>
+        <file>Micro.qml</file>
+        <file>Registers.qml</file>
+        <file>Memory.qml</file>
+        <file>Instructions.qml</file>
+        <file>ModeloIns.qml</file>
+        <file>DelegadoInst.qml</file>
+        <file>Utilidades.js</file>
+        <file>content/data/DISCO_DURO.txt</file>
+        <file>Simulation.qml</file>
+        <file>content/images/fondo.png</file>
+        <file>Planet.qml</file>
+        <file>content/images/Planeta_purple.png</file>
+        <file>content/images/Planeta_green.png</file>
+        <file>content/images/Restaurant.png</file>
+        <file>content/images/Gym.png</file>
+        <file>content/images/House.png</file>
+        <file>content/images/Planeta_home.png</file>
+        <file>Alien.qml</file>
+        <file>content/images/Alien_happy.png</file>
+        <file>content/images/Alien_neutral.png</file>
+        <file>content/images/Alien_mad.png</file>
+        <file>content/images/Alien_sad.png</file>
+        <file>content/images/second.png</file>
+        <file>content/images/hour.png</file>
+        <file>content/images/clock-night.png</file>
+        <file>ATimer.qml</file>
+        <file>MasterClock.qml</file>
+        <file>ActionList.qml</file>
+        <file>Termometer.qml</file>
+    </qresource>
+</RCC>
